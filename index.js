@@ -1,17 +1,19 @@
 const RPC = require('discord-rpc')
-const { BOT_INVITE, BOT_ID } = require("./confg")
+const { BOT_INIVTE, BOT_ID } = require('./confg')
+
+
 const rpc = new RPC.Client({
     transport: 'ipc'
 })
 
 rpc.on("ready", () => {
     rpc.setActivity({
-        details: "Advanced ticket bot!",
-        state: "Upvote My Bot",
-        largeImageKey: "Large",
-        largeImageText: "TicketBot",
+        details: "Advanced ticking system!",
+        // state: "Upvote My Bot",
+        largeImageKey: "large",
+        largeImageText: ";)",
         startTimestamp: new Date(),
-        buttons : [{label : "Bot Invite Link" , url : `${BOT_INVITE}`}, {label : "Upvote" , url : `https://top.gg/bot/${BOT_ID}/vote`}]
+        buttons : [{label : "Invite" , url : `${BOT_INIVTE}`}, {label : "Vote" , url : `https://top.gg/bot/${BOT_ID}/vote`}]
     })
 
     console.log("successfully activated the RPC")
