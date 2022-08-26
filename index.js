@@ -11,7 +11,7 @@ rpc.on("ready", () => {
         details: "Advanced ticking system!",
         // state: "Upvote My Bot",
         largeImageKey: "large",
-        largeImageText: ";)",
+        largeImageText: "TicketBot",
         startTimestamp: new Date(),
         buttons : [{label : "Invite" , url : `${BOT_INIVTE}`}, {label : "Vote" , url : `https://top.gg/bot/${BOT_ID}/vote`}]
     })
